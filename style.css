@@ -10,10 +10,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 body{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.347), rgba(0, 0, 0, 0.347)), url(./img/background.jpg);
+    background-image: url(./img/pexels-scott-webb-2117938.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size:  100%;
+    background-size:  100% 100%;
     display: flex;
     justify-content: center;
     
@@ -25,6 +25,7 @@ hr{
     max-width: 1000px;
     background-color: white;
     display: flex; 
+    box-shadow: -15px 1px 50px 5px rgba(0,0,0,0.48) ;
 }
 /* section-1 */
 #black{
