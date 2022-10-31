@@ -246,13 +246,10 @@ hr{
 .parcours p{
     color: var(--hr-color);
     padding: 10px 10px;
-    /* display: inline;
-    margin-bottom: 20px; */
     background-color: var(--font-color);
 }
 .experience h1{
     color: var(--font-color);
-    letter-spacing: 03px;
 }
 .experience-1{
     padding: 0 0 0 20px;
