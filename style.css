@@ -91,7 +91,7 @@ hr{
     margin: 40px 0 40px 75px;
     border: var(--font-color) solid 5px;
     width: 30%;
-    visibility: hidden;
+    display: none;
     position: absolute;
 }
 /* .description::before{
@@ -162,11 +162,10 @@ hr{
         background-color: #27272f;
     }
     .name img{
-        visibility: hidden;
-        position: absolute;
+        display: none;
     }
     #white img{
-        visibility: visible;
+        display: inline;
         margin:20px;
         position: static;
         width: 20%;
@@ -186,7 +185,7 @@ hr{
         text-align: center;
     }
     .description hr{
-        visibility: hidden;
+        display: none;
     }
 }
 @media screen and (max-width: 480px){
@@ -279,8 +278,7 @@ hr{
         visibility: hidden;
     }
     .experience hr{
-        visibility: hidden;
-        position: absolute;
+        display: none;
     }
     .experience{
         flex-basis: 100%;
@@ -320,8 +318,7 @@ hr{
         list-style: none;
     }
     .experience>h2{
-        visibility: hidden;
-        position: absolute;
+        display: none;
     }
     .parcours span{
         color: var(--font-color);
