@@ -152,7 +152,7 @@ hr{
 .Info hr{
     margin-bottom: 20px;
 }
-@media screen and (max-width: 900px){
+@media screen and (max-width: 990px){
     .content{
         display: flex;
         flex-wrap: wrap-reverse;
