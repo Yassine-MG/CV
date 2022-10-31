@@ -1,0 +1,457 @@
+:root{
+    --font-color: #313a3d;
+    --hr-color: #c1a126;
+    --font-color-2:rgb(159, 159, 159);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.347), rgba(0, 0, 0, 0.347)), url(./img/background.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:  100%;
+    display: flex;
+    justify-content: center;
+    
+}
+hr{
+    border: #c1a126 solid 1px;
+}
+.content{
+    max-width: 1000px;
+    background-color: white;
+    display: flex; 
+}
+/* section-1 */
+#black{
+    flex-basis: 30%;
+    padding: 30px 0 30px 0;
+    background-color: #27272f;
+} 
+/*  */
+/*  */
+.name img{
+    width: 50%;
+    /* margin-bottom: -5px; */
+    border-radius: 50%;
+    margin: 40px 0 40px 75px;
+    border: white solid 5px;
+    transition: all ease-in 0.40s;
+}
+.name img:hover{
+    transform: scale(1.2) translateY(-1px);
+}
+#white{
+    flex-basis: 70%;
+}
+.Info{
+    color: var(--font-color-2);
+    margin-left: 30px;
+}
+.Info h2{
+    color: var(--hr-color);
+}
+.display div{
+    padding-left: 20px;
+}
+.display {
+    padding: 10px;
+    display: flex;
+}
+.display i{
+    font-size: 30px;
+    margin-top: 5px;
+}
+.display h3{
+    font-size: 15px;
+    font-weight: 800;
+}
+.display p{
+    font-size: 15px;
+}
+.display a{
+    text-decoration: none;
+    color: var(--font-color-2);
+}
+.display-last{
+    margin-bottom: 30px;
+}
+
+
+
+
+/* white */
+#white img{
+    border-radius: 50%;
+    margin: 40px 0 40px 75px;
+    border: var(--font-color) solid 5px;
+    width: 30%;
+    visibility: hidden;
+    position: absolute;
+}
+/* .description::before{
+    content: " ";
+    top: 0 ;
+    bottom: 0;
+    position: absolute;
+    width: 5px;
+    background-color: var(--font-color);
+    left: 50%;
+    margin-left: -2.5px;
+    height: 5%;
+} */
+.description{
+    margin: 20px 0 0 0;
+
+}
+.profil{
+    text-align: center;
+}
+.profil h1{
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--font-color);
+    letter-spacing: 5px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.profil>div:nth-child(2){
+    text-align: left;
+    margin: 0 0 0 60px;
+}
+.profil h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--hr-color);
+    padding: 8px 8px;
+    letter-spacing: 5px;
+    background-color: var(--font-color);
+}
+.About{
+    margin: 23px 20px 21px;
+}
+.About h2{
+    color: var(--font-color);
+    /* padding: 20px; */
+    text-align: center;
+}
+.About p{
+    text-align: justify;
+}
+.description>div:nth-child(2) p{
+    text-align: justify;
+    color: var(--font-color);
+    margin-top: 20px;
+}
+.Info hr{
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 900px){
+    .content{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    #black{
+        flex-basis: 100%; 
+        background-color: #27272f;
+    }
+    .name img{
+        visibility: hidden;
+        position: absolute;
+    }
+    #white img{
+        visibility: visible;
+        margin:20px;
+        position: static;
+        width: 20%;
+    } 
+    #white{
+        flex-basis: 100%;
+    }
+    .profil h1{
+        font-size: 20px;
+    }
+    .profil h2{
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+    .profil>div:nth-child(2){
+        margin: 0;
+        text-align: center;
+    }
+    .description hr{
+        visibility: hidden;
+    }
+}
+@media screen and (max-width: 480px){
+    .content{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    #black{
+        flex-basis: 100%; 
+        background-color: #27272f;
+    }
+    #white{
+        flex-basis: 100%;
+    }
+    .profil h1{
+        font-size: 20px;
+    }
+    .profil h2{
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+    .profil>div:nth-child(2){
+        margin: 0;
+        text-align: center;
+    }
+}
+
+/* PARCOUR */
+.experience{
+    padding: 10px 0px 10px 20px;
+    /* margin-left: 0px; */
+}
+.experience h2,
+.experience h1{
+    display: inline-block;
+}
+.experience>h2{
+    margin-right: 3px;
+    color: var(--hr-color);
+    background-color: var(--font-color);
+    font-size: 15px;
+    padding: 8px 30px 8px 10px;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+.experience i{
+    border: solid var(--font-color) 2px;
+    border-radius: 50%;
+    padding: 10px;
+}
+.parcours{
+    padding: 20px 0px 20px 20px;
+    margin-left: 98px;
+}
+.Parcour{
+    position: relative;
+}
+.parcours p{
+    color: var(--hr-color);
+    padding: 10px 10px;
+    /* display: inline;
+    margin-bottom: 20px; */
+    background-color: var(--font-color);
+}
+.experience h1{
+    color: var(--font-color);
+    letter-spacing: 03px;
+}
+.experience-1{
+    padding: 0 0 0 20px;
+}
+.parcours hr{
+    margin-top: 20px;
+}
+.parcours ul{
+    list-style: none;
+    margin-top: 10px;
+}
+.parcours ul li{
+    padding: 5px;
+}
+.parcours span{
+    color: transparent;
+}
+.experience-2>h2{
+    font-size: 10px;
+}
+@media screen and (max-width: 980px){
+    .Parcour{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .Parcour::before{
+        visibility: hidden;
+    }
+    .experience hr{
+        visibility: hidden;
+        position: absolute;
+    }
+    .experience{
+        flex-basis: 100%;
+        padding: 0;
+        text-align: center;
+    }
+    .experience h1{
+        background-color: var(--font-color);
+        color: var(--hr-color);
+        display: block;
+        letter-spacing: 5px;
+        font-size: 15px;
+    }
+    .parcours p{
+        background-color: white;
+        color: var(--font-color);
+        padding: 20px;
+        font-size:15px;
+        font-weight: 700;
+    }
+    .parcours ul{
+        padding: 0 20px;
+
+    }
+    .parcours ul li{
+        font-size: 15px;
+    }
+    .experience i{
+        border: none;
+    }
+    .parcours{
+        margin: 0;
+        padding: 0;
+        text-align: justify;
+    }
+    .Parcour ul{
+        list-style: none;
+    }
+    .experience>h2{
+        visibility: hidden;
+        position: absolute;
+    }
+    .parcours span{
+        color: var(--font-color);
+    }
+    .experience>h1{
+        margin-top: 30px;
+    }
+}
+/* progresse bar */
+.langues-all h1{
+    color: var(--hr-color);
+}
+.progress-bar{
+    margin: 30px 0;
+}
+.langue span{
+    font-size: 12px;
+    font-weight: 500;
+}
+.progress-bars{
+    margin-top: 40px;
+}
+.langues{
+    margin-bottom: 30px;
+}
+.progress-line{
+    position: relative;
+    height: 6px;
+    height: 6px;
+    border-radius: 10px;
+    width: 80%;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: var(--font-color);
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.progress-line span{
+    height: 100%;
+    background: var(--hr-color);
+    position: absolute;
+    border-radius: 10px;
+}
+.progress-line.arab span{
+    width: 100%;
+}
+.progress-line.francais span{
+    width: 90%;
+}
+.progress-line.englais span{
+    width: 70%;
+}
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+/* hobbies */
+.Info>h1{
+    color: var(--hr-color);
+}
+.hobbies{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.hobbies p{
+    font-size: 12px;
+}
+.hobbies .display div{
+    padding: 0;
+}
+.hobbies .display{
+    flex-basis: 33%;
+}
+/* last section  */
+.last-section{
+    background-color: #27272f;
+    margin-top: 35px;
+}
+.boxes {
+    position: relative;
+    flex-basis: 10%;
+}
+.boxes p{
+    position: absolute;
+    top: 35%;
+    font-size: 12px;
+    left: 108px;
+    color: var(--font-color-2);
+    font-weight: 500;
+}
+.last-section h1{
+    text-transform:capitalize;
+    color: var(--hr-color);
+    display: inline-block;
+    border-bottom:solid #c1a126;
+    margin: 20px 20px 0;
+}
+svg circle{
+    fill: none;
+    stroke: var(--hr-color);
+    stroke-width: 3px;
+    stroke-dasharray: 367;
+    stroke-dashoffset: 367;
+    animation: circle 2s forwards;
+    stroke-linecap: round;
+}
+@keyframes circle{
+    to{
+        stroke-dashoffset: 140;
+    }
+}
+.box-1 circle{
+    animation: circl 2s forwards;
+}
+@keyframes circl{
+    to{
+        stroke-dashoffset: 120;
+    }
+}
+.dis{
+    display: flex;
+    justify-content:center;
+    /* flex-wrap: wrap; */
+}
+@media screen and (max-width: 600px){
+    .dis{
+        flex-wrap: wrap;
+    }
+}
