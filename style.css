@@ -33,6 +33,24 @@ hr{
     padding: 30px 0 30px 0;
     background-color: #27272f;
 } 
+@media only print{
+    body{
+        /* padding: 50px; */
+    }
+    .last-section {
+        background-color: #27272f;
+        margin-top: 0px;
+    }
+    h1{
+        font-size: 15px !important;
+    }
+    .content{
+        max-width: 900px;
+        background-color: black;
+        color: white;
+        padding: 10px;
+    }
+}
 /*  */
 /*  */
 .name img{
@@ -81,10 +99,6 @@ hr{
 .display-last{
     margin-bottom: 30px;
 }
-
-
-
-
 /* white */
 #white img{
     border-radius: 50%;
@@ -212,7 +226,6 @@ hr{
         text-align: center;
     }
 }
-
 /* PARCOUR */
 .experience{
     padding: 10px 0px 10px 20px;
